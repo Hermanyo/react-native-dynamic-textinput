@@ -2,7 +2,7 @@
   "name": "react-native-dynamic-textinput",
   "title": "React Native Dynamic Textinput",
   "version": "1.0.0",
-  "description": "TODO",
+  "description": "A custom react-native textinput UI component library for React Native ",
   "main": "index.js",
   "files": [
     "README.md",

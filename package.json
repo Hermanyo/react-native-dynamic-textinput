@@ -1,0 +1,43 @@
+{
+  "name": "react-native-dynamic-textinput",
+  "title": "React Native Dynamic Textinput",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "index.js",
+  "files": [
+    "README.md",
+    "android",
+    "index.js",
+    "ios",
+    "react-native-dynamic-textinput.podspec"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hermanyo/react-native-dynamic-textinput.git",
+    "baseUrl": "https://github.com/Hermanyo/react-native-dynamic-textinput"
+  },
+  "keywords": [
+    "react-native",
+    "dynamic textinput",
+    "multiline textinput"
+  ],
+  "author": {
+    "name": "Hermanyo H.",
+    "email": "hermanyoh.solutions@gmail.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": { 
+    "react": "16.13.1",
+    "react-native": "0.63.3", 
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.3"
+  }
+}

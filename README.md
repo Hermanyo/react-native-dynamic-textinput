@@ -1,5 +1,8 @@
 # react-native-dynamic-textinput
  
+##Demo
+
+![](https://raw.githubusercontent.com/Hermanyo/react-native-dynamic-textinput/main/dynamic-textInput.gif)
 
 ## Installation
 

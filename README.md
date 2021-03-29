@@ -17,7 +17,7 @@ yarn add react-native-dynamic-textinput
 ```javascript
 import DynamicTextinput from 'react-native-dynamic-textinput';
 
-<DynamicInputText
+<DynamicTextinput
   backgroundColor={'black'}
   borderTopColor={'black'}
   placeholderText={'Write a message here'}

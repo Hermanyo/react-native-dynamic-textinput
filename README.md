@@ -5,12 +5,14 @@
 
 ```
 npm i react-native-dynamic-textinput --save
+npm i react-native-vector-icons --save
 ```
 
 ### or
 
 ```
 yarn add react-native-dynamic-textinput
+yarn add react-native-vector-icons
 ``` 
 
 ## Usage

@@ -52,3 +52,5 @@ sendButtonBgColor | string | sendbutton background color
 textInputBgColor | string | textInput background color
 backgroundColor | string | component backgroundColor
 disableSendButton | bool | disable sendbutton
+howManyLeftButtons | number | number of buttons on left from the textInput
+leftButtons | React-native View | add buttons on left from the textInput 

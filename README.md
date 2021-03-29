@@ -47,9 +47,8 @@ borderTopColor | string | component borderTopColor
 placeholderText | string | textinput placeholder value
 placeholderTextColor | string | textInput placeholder color
 messageTextColor | string | typed text color
-keyboardType | string | check react-native   [keyboardType](https://reactnative.dev/docs/textinput#keyboardtype)
-sendButtonBgColor | string | sendbutton background color 
-sendButtonImage | string | send button image
+keyboardType | string | check react-native [keyboardType](https://reactnative.dev/docs/textinput#keyboardtype)
+sendButtonBgColor | string | sendbutton background color  
 textInputBgColor | string | textInput background color
 backgroundColor | string | component backgroundColor
 disableSendButton | bool | disable sendbutton

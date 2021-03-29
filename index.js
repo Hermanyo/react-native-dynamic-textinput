@@ -1,7 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {useState, useEffect, useRef} from 'react';
-import {View, TextInput, Animated, Keyboard, StyleSheet, TouchableOpacity, Platform} from 'react-native';
-import DeviceInfo from 'react-native-device-info';
+import {View, TextInput, Animated, Keyboard, StyleSheet, TouchableOpacity, Platform} from 'react-native'; 
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Proptypes from 'prop-types';
 

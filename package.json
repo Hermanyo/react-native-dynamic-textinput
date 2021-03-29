@@ -2,7 +2,7 @@
   "name": "react-native-dynamic-textinput",
   "title": "React Native Dynamic Textinput",
   "version": "1.0.0",
-  "description": "TODO",
+  "description": "A custom react-native textinput UI component library for React Native ",
   "main": "index.js",
   "files": [
     "README.md",
@@ -28,15 +28,17 @@
     "name": "Hermanyo H.",
     "email": "hermanyoh.solutions@gmail.com"
   },
+  "bugs": {
+    "url": "https://github.com/Hermanyo/react-native-dynamic-textinput/issues"
+  },
   "license": "MIT",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
-  "peerDependencies": { 
-    "react": "16.13.1",
-    "react-native": "0.63.3", 
+  "peerDependencies": {
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
+    "metro-react-native-babel-preset": "^0.65.2",
     "react": "16.13.1",
     "react-native": "0.63.3"
   }

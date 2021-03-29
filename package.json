@@ -25,7 +25,7 @@
     "multiline textinput"
   ],
   "author": {
-    "name": "Hermanyo H.",
+    "name": "Hermanyo_h",
     "email": "hermanyoh.solutions@gmail.com"
   },
   "bugs": {
@@ -41,5 +41,8 @@
     "metro-react-native-babel-preset": "^0.65.2",
     "react": "16.13.1",
     "react-native": "0.63.3"
+  },
+  "dependencies": {
+    "err": "^2.1.12"
   }
 }

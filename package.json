@@ -16,8 +16,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hermanyo/react-native-dynamic-textinput.git",
-    "baseUrl": "https://github.com/Hermanyo/react-native-dynamic-textinput"
+    "url": "git+https://github.com/BrittoPaulo/react-native-dynamic-textinput.git",
+    "baseUrl": "https://github.com/BrittoPaulo/react-native-dynamic-textinput/tree/refactor/DynamicTextInput"
   },
   "keywords": [
     "react-native",
@@ -29,7 +29,7 @@
     "email": "hermanyoh.solutions@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/Hermanyo/react-native-dynamic-textinput/issues"
+    "url": "https://github.com/BrittoPaulo/react-native-dynamic-textinput/tree/refactor/DynamicTextInput/issues"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",

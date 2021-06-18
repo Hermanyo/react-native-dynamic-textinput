@@ -39,6 +39,9 @@ function DynamicInputText({
   disableSendButton,
   onPressSendButton,
   howManyLeftButtons,
+  sendColorIcon = '#FFF',
+  sendButtonIcon = null,
+  heightInput = 30,
 }) {
   const [_height, setheight] = useState(0);
   const keyboardOffset = useRef(new Animated.Value(0)).current;
@@ -82,7 +85,7 @@ function DynamicInputText({
         ]}>
         <View style={{flexDirection: 'row', flex: 1, justifyContent: 'space-between'}}>
           {howManyLeftButtons > 0 && <View style={[styles.leftButtonPosition, {flex: howManyLeftButtons / 10}]}>{leftButtons}</View>}
-          <View style={[styles.textInputView, {flex: howManyLeftButtons > 0 ? 1 - howManyLeftButtons / 10 : 1}]}>
+          <View style={[styles.textInputView, {flex: howManyLeftButtons > 0 ? 1 - howManyLeftButtons / 8 : 1}]}>
             <TextInput
               editable={editable}
               multiline={multiline}
@@ -92,17 +95,17 @@ function DynamicInputText({
               underlineColorAndroid="transparent"
               keyboardType={keyboardType}
               value={messageText}
-              onChange={(event) => {
+              onChange={event => {
                 event.target.value;
               }}
-              onChangeText={(editedText) => {
+              onChangeText={editedText => {
                 onChange(editedText);
               }}
-              onContentSizeChange={(event) => setheight(messageText.length > 0 ? event.nativeEvent.contentSize.height : 0)}
+              onContentSizeChange={event => setheight(messageText.length > 0 ? event.nativeEvent.contentSize.height : 0)}
               style={[
                 styles.textInputStyle,
                 {
-                  height: Math.min(120, Math.max(35, _height)),
+                  height: Math.min(120, Math.max(heightInput, _height)),
                   backgroundColor: textInputBgColor,
                   color: messageTextColor,
                 },
@@ -123,7 +126,7 @@ function DynamicInputText({
                     backgroundColor: disableSendButton === true ? sendButtonDisableColor : sendButtonEnableColor,
                   },
                 ]}>
-                <Icon name="send" style={{fontSize: 15, color: disableSendButton ? 'gray' : 'white'}} />
+                {sendButtonIcon ? sendButtonIcon : <Icon name="send" style={{fontSize: 15, color: sendColorIcon, alignSelf: 'center'}} />}
               </View>
             </View>
           </TouchableOpacity>
@@ -152,7 +155,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     paddingTop: 8,
     textAlign: 'left',
-    borderRadius: 5,
+    borderRadius: 10,
   },
   leftButtonPosition: {
     justifyContent: 'flex-end',
@@ -164,6 +167,7 @@ const styles = StyleSheet.create({
     paddingLeft: 5,
     flex: 1,
     ...Platform.select({android: {marginVertical: 1}}),
+    right: 5,
   },
   sendButtonStyle: {
     justifyContent: 'center',

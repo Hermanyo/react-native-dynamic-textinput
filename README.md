@@ -38,6 +38,8 @@ import DynamicTextinput from 'react-native-dynamic-textinput';
   onPressSendButton={() => console.debug("message sent")} //add your action
   messageText={message} //Your message variable
   onChange={(msg) => console.debug(msg)}
+  sendButtonIcon={<image style={{width: 20, height: 20}} tintColor={'#fff'} source={url('../../icon')} />}
+  heightInput={45}
 />
 ```
 
@@ -59,3 +61,6 @@ backgroundColor | string | component backgroundColor
 disableSendButton | bool | disable sendbutton
 howManyLeftButtons | number | number of buttons on left from the textInput
 leftButtons | React-native View | add buttons on left from the textInput 
+sendColorIcon | string | sendColor default icon
+heightInput | number | height input 
+sendButtonIcon | React-native component | change icon send button

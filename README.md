@@ -34,6 +34,7 @@ import DynamicTextinput from 'react-native-dynamic-textinput';
   keyboardType={'default'}
   sendButtonDisableColor={'#f5f5f0'}
   sendButtonEnableColor={'#0C0A6C'}
+  textInputProps={{autoFocus: true}} //TextInput props
   disableSendButton={false}
   onPressSendButton={() => console.debug("message sent")} //add your action
   messageText={message} //Your message variable
@@ -64,3 +65,4 @@ leftButtons | React-native View | add buttons on left from the textInput
 sendColorIcon | string | sendColor default icon
 heightInput | number | height input 
 sendButtonIcon | React-native component | change icon send button
+textInputProps | React-native TextInput | TextInput props

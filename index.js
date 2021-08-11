@@ -42,6 +42,7 @@ function DynamicInputText({
   sendColorIcon = '#FFF',
   sendButtonIcon = null,
   heightInput = 30,
+  textInputProps = {}
 }) {
   const [_height, setheight] = useState(0);
   const keyboardOffset = useRef(new Animated.Value(0)).current;
@@ -87,6 +88,7 @@ function DynamicInputText({
           {howManyLeftButtons > 0 && <View style={[styles.leftButtonPosition, {flex: howManyLeftButtons / 10}]}>{leftButtons}</View>}
           <View style={[styles.textInputView, {flex: howManyLeftButtons > 0 ? 1 - howManyLeftButtons / 8 : 1}]}>
             <TextInput
+              {...textInputProps}
               editable={editable}
               multiline={multiline}
               placeholder={placeholderText}
